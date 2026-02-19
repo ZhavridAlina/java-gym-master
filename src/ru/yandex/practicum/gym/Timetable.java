@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Timetable {
 
-    private HashMap<DayOfWeek, TreeMap<TimeOfDay, List<TrainingSession>>> timetable = new HashMap<>();
+    private final HashMap<DayOfWeek, TreeMap<TimeOfDay, List<TrainingSession>>> timetable = new HashMap<>();
 
     public void addNewTrainingSession(TrainingSession trainingSession) {
         //сохраняем занятие в расписании
@@ -42,7 +42,6 @@ public class Timetable {
             return Collections.emptyList();
         }
 
-        getCountByCoaches();
         return allTrainingsInTime;
 
     }
