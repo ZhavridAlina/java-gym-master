@@ -30,6 +30,13 @@ public class Coach {
         return Objects.hash(surname, name, middleName);
     }
 
+    @Override
+    public String toString() {
+        return "Имя: " + name +
+                ", Фамилия: " + surname +
+                ", Отчество: " + middleName;
+    }
+
     public String getSurname() {
         return surname;
     }
