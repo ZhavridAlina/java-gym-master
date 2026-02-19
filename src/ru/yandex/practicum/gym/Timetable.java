@@ -63,9 +63,9 @@ public class Timetable {
             }
         }
 
-        ArrayList<CounterOfTrainings> countersOfSessions=new ArrayList<>();
-        for (Map.Entry<Coach,Integer> entry: countByCoaches.entrySet()){
-            CounterOfTrainings newCounter=new CounterOfTrainings(entry.getKey(), entry.getValue());
+        ArrayList<CounterOfTrainings> countersOfSessions = new ArrayList<>();
+        for (Map.Entry<Coach, Integer> entry : countByCoaches.entrySet()) {
+            CounterOfTrainings newCounter = new CounterOfTrainings(entry.getKey(), entry.getValue());
             countersOfSessions.add(newCounter);
         }
         Collections.sort(countersOfSessions);
